@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" flexbox="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .containier {
+      border-radius: 6px;
+      border-color: gray;
+      border-style: solid;
+      border-width: 1px;
+      width: 300px;
+    }
+    .flexbox {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      height: 50px;
+      padding: 6px 12px;/* 上下 左右 */
+      align-items: center;
+      /* 很重要 不设置会导致子元素溢出 */
+    }
+    button {
+      color: white;
+      background-color: rgb(47, 118, 249);
+      border-radius: 20px;
+      border-style: none;
+      padding-top: 3px;
+      padding-bottom: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="containier">
+    <div class="flexbox">
+      <p>Home</p>
+      <button>14</button>
+    </div>
+    <div class="flexbox">
+      <p>Home</p>
+      <button>14</button>
+    </div>
+    <div class="flexbox">
+      <p>Home</p>
+      <button>14</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      width: 400px;
+      border-radius: 3px;
+      border-color: gray;
+      border-style: none;
+      box-shadow: 0 0 3px rgba(0,0,0,0.5);
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .title {
+      color: gray;
+      margin-left: 5px;
+
+    }
+    .row {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      align-items: center;
+      display: flex;
+    }
+    img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 25px;
+      margin-left: 5px;
+      
+      margin-right: 5px;
+    }
+    .row1 {
+      display: flex;
+      /* align-items: center; */
+      justify-content: space-between;
+    }
+    .row1-1 {
+      font-size: 18px;
+      font-weight: bold;
+      flex: 1;
+    }
+    .row1-2 {
+      color: gray;
+    }
+    .row2 {
+      font-weight: bold;
+    }
+    .row3 {
+      color: gray;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">ALL INBOXES</div>
+    <div class="row">
+      <img src="./cat.jpg" alt="">
+      <div class="row-container">
+        <div class="row1">
+          <div class="row1-1">
+            Chewy Promotions
+          </div>
+          <div class="row1-2">
+            4:58 PM
+          </div>
+        </div>
+        <div class="row2">
+          Biggest sales of the year!
+        </div>
+        <div class="row3">
+          Hey there! We're writing to tell you about our..
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

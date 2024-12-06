@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    span {
+      width: 100px;
+      position:fixed;
+      bottom: 0;
+      right:0;
+      top:0;
+    }
+    .overlay {
+      position: fixed;
+      background-color: rgba(0,0,0,0.8);
+      top: 0;
+      bottom: 0;
+      left:0;
+      right:0;
+      display: flex;
+      align-items:center;
+      justify-content: center;
+    }
+    .flexbox {
+      background-color: #fff;
+      width: 300px;
+      padding-left:10px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+
+    }
+    .model-title {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+  </style>
+</head>
+<body style="height: 3000px;">
+  <span style="background-color: green; color: white;">
+    right sidebar
+  </span>
+  <div class="overlay">
+    <div class="flexbox">
+      <p class="model-title">Model Title</p>
+      <p class="model-content">this is a model</p>
+      <button>close</button>
+    </div>
+  </div>
+</body>
+</html>

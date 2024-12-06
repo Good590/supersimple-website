@@ -1,0 +1,77 @@
+@media(max-width:1200px){
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: #fff;
+    /* 设置宽度 */
+    width: 72px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 对于列属对齐时 以上两个属性交换了 */
+    flex-direction: column;
+    /* 垂直对齐 */
+    cursor: pointer;
+  }
+  .sidebar-link:hover {
+    background-color: rgb(234, 234, 234);
+  
+  }
+  /* 侧边栏链接内的图像 */
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom:4px
+  
+  }
+  
+  .sidebar-link div {
+    font-size: 10px;
+  }
+  
+}
+@media(min-width:1200.1px){
+  .sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 55px;
+    background-color: #fff;
+    /* 设置宽度 */
+    width: 200px;
+    z-index: 200;
+    padding-top: 5px;
+  }
+  
+  .sidebar-link {
+    height: 74px;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: 24px;
+    align-items: center;
+    /* 垂直对齐 */
+    cursor: pointer;
+  }
+  .sidebar-link:hover {
+    background-color: rgb(234, 234, 234);
+  
+  }
+  /* 侧边栏链接内的图像 */
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom:4px
+    
+  }
+  
+  .sidebar-link div {
+    font-size: 16px;
+    padding-left: 10px;
+  }  
+}

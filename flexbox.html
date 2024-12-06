@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Practice</title>
+</head>
+<body style="padding-bottom: 1000px;">
+  <div style="
+    display: flex;
+    flex-direction: row;">
+    <!-- 水平对齐元素 -->
+    <div style="background-color: lightblue;">div1 text</div>
+    <div style="background-color: lightpink;">div2  <p>text</p></div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;">
+    <!-- 水平对齐元素 -->
+    <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div>
+    <div style="
+      background-color: lightpink;
+      flex: 1;
+      /* 相当于1fr */
+      ">flex:1</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;">
+    <!-- 水平对齐元素 -->
+    <div style="
+      background-color: lightblue;
+      flex: 1;
+      /* 相当于1fr */
+      ">flex:1</div>
+    <div style="
+      background-color: lightpink;
+      width: 100px;">
+      100px</div>
+
+    <!-- grid 对应于更严格的布局
+    flexbox对应于灵活的布局 -->
+    <div style="
+      background-color: lightblue;
+      flex: 2;">
+      flex:2</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    /* 水平对齐 */
+    justify-content: center;
+    /* 水平放置方式 */
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;">
+    <!-- 水平对齐元素 -->
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+      /* 相当于1fr */
+      ">100px</div>
+    <!-- grid 对应于更严格的布局
+    flexbox对应于灵活的布局 -->
+    <div style="
+      background-color: lightpink;
+      width: 100px;">
+      100px</div>
+    <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    /* 水平对齐 */
+    justify-content: space-between;
+    /* 水平放置方式----均匀分布 */
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;">
+    <!-- 水平对齐元素 -->
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+      /* 相当于1fr */
+      ">flex:1</div>
+    <!-- grid 对应于更严格的布局
+    flexbox对应于灵活的布局 -->
+    <div style="
+      background-color: lightpink;
+      width: 100px;">
+      100px</div>
+    <div style="
+      background-color: lightblue;
+      width: 100px;">
+      flex:2</div>
+  </div>
+
+  <div style="
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    /* 水平对齐 */
+    justify-content: space-between;
+    /* 水平放置方式----均匀分布 */
+    align-items: center;
+    /* 垂直对齐方式 默认stretch */
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;">
+    <!-- 水平对齐元素 -->
+    <div style="
+      background-color: lightblue;
+      width: 100px;
+      /* 相当于1fr */
+      ">100px</div>
+    <!-- grid 对应于更严格的布局
+    flexbox对应于灵活的布局 -->
+    <div style="
+      background-color: lightpink;
+      width: 100px;">
+      100px</div>
+    <div style="
+      background-color: lightblue;
+      width: 100px;">
+      100px</div>
+  </div>
+</body>
+</html>

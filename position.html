@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Position Practice</title>
+</head>
+<body style="height: 3000px;
+  padding-top :60px;
+  padding-left: 80px;">
+  <!-- 为顶部添加间距 防止内容和header重叠 -->
+  <div style="
+    background-color: black;
+    color: white;
+    position:fixed;
+    top:0px;
+    /* 距离浏览器顶部 */
+    left: 0px;
+    /* 距离浏览器左部 */
+    right: 0px;
+    /* 两个相反的属性会拉伸元素 */
+    bottom: 100px;
+    /* 不希望高度随页面变化时，需要设置高度属性 */
+    height: 50px;
+    z-index: 1;
+    /* 优先级 */
+    "
+    >
+    header
+  </div>
+
+  <div style="background-color: green; 
+  color: white;
+  position: fixed;
+  left:0;
+  bottom: 0;
+  top: 50px;
+  /* 不希望宽度随页面变化时，需要设置高度属性 */
+  width: 72px;">
+    sidebar
+    <div style="  
+    position: absolute;
+    background-color: red;
+    color: white;
+  
+    top: 0px;
+    right: 0px;
+    /* 此时 right属性对应于父级div */
+    /* 即 此时该div 相对于父级div固定 */
+    /* z-index:2; */
+    ">
+    <!-- absolute定位在page中，随页面滚动 -->
+    <!-- fixed定位在broswer中 ，不随页面滚动 -->
+      X
+    </div>
+  </div>
+
+  <div style="  
+  position: absolute;
+  background-color: red;
+  color: white;
+
+  top: 60px;
+  right: 10px;
+  /* z-index:2; */
+  ">
+  <!-- absolute定位在page中，随页面滚动 -->
+  <!-- fixed定位在broswer中 ，不随页面滚动 -->
+    absolute
+  </div>
+
+  <div style="
+    background-color: lightblue;
+    height: 200px;
+    width: 200px;
+    position: relative">div 1</div>
+    <!-- 如果放置别的元素 relative属性将相对于该元素定位 -->
+  <div style="
+    background-color: lightpink;
+    height: 200px;
+    width: 200px;
+    position: relative;">div 2
+  
+      <div style="  
+      position: absolute;
+      background-color: black;
+      color: white;
+
+      bottom: 10px;
+      right: 10px;
+      /* z-index:2; */
+      ">
+      <!-- absolute定位在page中，随页面滚动 -->
+      <!-- fixed定位在broswer中 ，不随页面滚动 -->
+        5:00
+      </div>
+    </div>
+</body>
+</html>
